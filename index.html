@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <!-- Personal Information -->
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required><br>
+                
+                <label for="role">Role:</label>
+                <input type="text" id="role" required><br>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" required><br>
+                
+                <label for="university">University:</label>
+                <input type="text" id="university" required><br>
+                
+                <label for="gradYear">Graduation Year:</label>
+                <input type="text" id="gradYear" required><br>
+            </section>
+
+            <!-- Work Experience -->
+            <section>
+                <h2>Work Experience</h2>
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" required><br>
+                
+                <label for="company">Company:</label>
+                <input type="text" id="company" required><br>
+                
+                <label for="jobDuration">Duration:</label>
+                <input type="text" id="jobDuration" required><br>
+                
+                <label for="jobResponsibilities">Responsibilities:</label><br>
+                <textarea id="jobResponsibilities" required></textarea><br>
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" required><br>
+            </section>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div class="resume-container" id="resumeContainer">
+        <!-- Resume will be dynamically generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
