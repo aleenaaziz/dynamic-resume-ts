@@ -1,81 +1,59 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 20px;
     background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Form Container */
-.form-container {
+form {
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form section {
-    margin-bottom: 20px;
-}
-
-label {
+form label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin: 10px 0 5px;
 }
 
-input, textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #0073e6;
+    background-color: #28a745;
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Resume Container */
-.resume-container {
-    max-width: 800px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+button:hover {
+    background-color: #218838;
 }
 
-.resume-container h2 {
-    color: #0073e6;
+#resumeContainer {
+    margin-top: 40px;
 }
 
-.resume-container ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.resume-section {
+    margin-bottom: 20px;
 }
 
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills-list li {
-    background-color: #0073e6;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 14px;
+#shareLinkContainer {
+    margin-top: 20px;
+    text-align: center;
 }
